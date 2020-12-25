@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "852753636472",
+    "firebase_url": "https://aildb-2106a.firebaseio.com",
+    "project_id": "aildb-2106a",
+    "storage_bucket": "aildb-2106a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852753636472:android:35ff2cca1c6a98cbade18d",
+        "android_client_info": {
+          "package_name": "com.aildemo.ailibrary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852753636472-4ldo1l9negt19g8outfmcv8sdlphubp2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ3jp2grqOKBXX7SM95lZaPgCroApQExc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852753636472-4ldo1l9negt19g8outfmcv8sdlphubp2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

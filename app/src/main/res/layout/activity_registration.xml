@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registration">
+
+    <TextView
+        android:id="@+id/viewTxt"
+        android:layout_width="220dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="Enter your details"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <EditText
+        android:id="@+id/txtAdYear"
+        android:layout_width="283dp"
+        android:layout_height="42dp"
+        android:hint="Enter Admission Year"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:maxLength="4"
+        android:background="@drawable/edittext_bg"
+        android:padding="5dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66" />
+
+    <EditText
+        android:id="@+id/txtRoll"
+        android:layout_width="283dp"
+        android:layout_height="42dp"
+        android:hint="Enter Roll No"
+        android:digits="0123456789 QWERTYUIOPASDFGHJKLZXCVBNM"
+        android:inputType="textCapCharacters"
+        android:background="@drawable/edittext_bg"
+        android:padding="5dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.552" />
+
+    <EditText
+        android:id="@+id/txtPName"
+        android:layout_width="283dp"
+        android:layout_height="42dp"
+        android:hint="Enter Guardian's Name"
+        android:digits=" QWERTYUIOPASDFGHJKLZXCVBNM"
+        android:background="@drawable/edittext_bg"
+        android:padding="5dip"
+        android:inputType="textCapCharacters"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.335" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="283dp"
+        android:layout_height="42dp"
+        android:hint="Enter Full Name"
+        android:digits=" QWERTYUIOPASDFGHJKLZXCVBNM"
+        android:inputType="textCapCharacters"
+        android:background="@drawable/edittext_bg"
+        android:padding="5dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.224" />
+
+
+    <EditText
+        android:id="@+id/txtMobile"
+        android:layout_width="283dp"
+        android:layout_height="42dp"
+        android:hint="Enter Mobile Number"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:background="@drawable/edittext_bg"
+        android:padding="5dip"
+        android:maxLength="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445" />
+
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="85dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.826"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/selectDept"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Choose Department " />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="285dp"
+            android:layout_height="35dp"
+            android:background="@drawable/spinnerbg"
+            android:padding="5dip"
+            android:text="Choose Department" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Register"
+        android:background="@drawable/bgbtn"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Reset"
+        android:background="@drawable/bgbtn"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Back"
+        android:background="@drawable/bgbtn"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

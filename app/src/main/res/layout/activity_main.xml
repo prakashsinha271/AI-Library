@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="325dp"
+        android:layout_height="30dp"
+        android:text="Welcome to Autonomous Integrated Library (AIL)"
+        android:background="@drawable/bgtext"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <EditText
+        android:id="@+id/logID"
+        android:layout_width="300dp"
+        android:layout_height="59dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="Enter registered ID number"
+        android:digits="0123456789QWERTYUIOPASDFGHJKLZXCVBNM"
+        android:inputType="textCapCharacters"
+        android:padding="15dip"
+        android:ellipsize="middle"
+        android:gravity="left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <EditText
+        android:id="@+id/logPass"
+        android:layout_width="300dp"
+        android:layout_height="59dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:padding="15dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.400" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="84dp"
+        android:layout_height="46dp"
+        android:background="@drawable/bgbtn"
+        android:text="Log In"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:text="New user? Click here..."
+        android:gravity="center"
+        android:background="@drawable/bgtext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <TextView
+        android:id="@+id/tvRecover"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:text="Recover login credential..."
+        android:background="@drawable/bgtext"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.800" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
